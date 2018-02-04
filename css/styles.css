@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    box-sizing: border-box;
+}
+
+
+.jumbotron{
+    background-color: #cccccc;
+    background-size: cover;
+     -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    /**height: 250px;*/
+    margin-bottom: 0;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.ab-me{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding:0,0,10px,0;
+}
+
+.opciones{
+    background-color: #232323;
+    height: 60px;
+    margin: 0;
+}
+
+.button {
+    background-color: black;
+    border-color: white;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    justify-content: center;
+
+}
+.nav-center{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    font-size: 30px;
+    
+    
+}
+a{
+  font-size: 22px;
+  color:white;
+
+  
+}
+.el-gory{
+    text-align:center;
+    
+}
+
+.la-foto{
+    align-items: center;
+    height:100px;
+    width: 100px;
+}
+
+
+.header{
+    height: 60px;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #FBA919;
+    color:#fff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.container{
+    padding: 10px,0, 0, 10px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.ed-back{
+    background-color: blue;
+}
+
+
+.menu{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo, .icon-menu{
+    margin: 5px;
+}
+
+.menu-link{
+    display: block;
+    padding:15px;
+    background: #FBA919;
+    text-decoration: none;
+    color: #fff;
+}
+.menu-link:hover, select{
+    background: white;
+    color: #FBA919;
+}
+
+.mostrar{
+    left: 0;
+}
+
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+}
+
+.banner .contenedor{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-txt{
+    display: none;
+    text-align: center;
+}
