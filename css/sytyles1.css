@@ -86,7 +86,7 @@ h3{
     font-size: 25px;
 }
 
-
+/**
 .container ul {
   margin: 0;
   margin-top: 100px;
@@ -142,7 +142,7 @@ h3{
 }
 .container div .title, .container div .type {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 12.githubpx;
 }
 .container div .info {
   font-weight: 300;
