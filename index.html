@@ -32,6 +32,8 @@
             text-align: center;
         }
     </style>
+    
+    <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>   
 </head>
 
 
@@ -343,8 +345,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <!--Contact Me-->
 
     <section id="cont-me" class="cont-me">
@@ -355,25 +357,23 @@
                     <hr class="linea-gorda" />
                 </div>
             </div>
-            
-             <form action="https://formspree.io/jd.gonzaleza@uniandes.edu.com" method="POST">
-          <div class="row contact-form col-md-10 col-md-offset-1">
-            <div class="col-md-4 form-group">
-              <input type="text" class="form-control" name="name" placeholder="Name" required />
-              <p class="help-block text-danger"></p>
-              <input type="email" class="form-control" name="email" placeholder="Email" required />
-              <p class="help-block text-danger"></p>
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required />
-              <p class="help-block text-danger"></p>
-            </div>
 
-            <div class="col-md-8 form-group">
-              <textarea class="form-control" id="message" name="message" rows="25" cols="10" placeholder="Message Text...." required data-validation-required-message="Please enter a message."></textarea>
-              <div id="success"></div>
-              <button type="submit" class="btn btn-default submit-btn">SEND</button>
-            </div>
-          </div>
-        </form>
+            <form id="contact-form">
+                <label for="inputName"class = "form-cont" >Name</label>
+                <br/>
+                <input class="form__input" id="inputName" type="text" placeholder="Name" name="name" />
+                <br/>
+                <label for="inputEmail"class = "form-cont" >Email</label>
+                <br/>
+                <input class="form__input" id="inputEmail" type="email" placeholder="Email" name="email" />
+                <br/>
+                <label for="inputMessage"class = "form-cont" >Message</label>
+                <br/>
+                <textarea class="form__input" id="inputMessage" rows="3" placeholder="Your Message" name="message"></textarea>
+                <br/>
+                <input class="display-none" type="text" name="_gotcha" />
+                <input class="btn--default fill" id="email-submit-btn" type="submit" value="Send" />
+            </form>
 
         </div>
     </section>
@@ -430,15 +430,48 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <input type="text" name="_gotcha" style="display:none" />
 
     <script src="js/menu.js"></script>
+    
+    <script>
+        /* global $ */
+        "use strict";
+
+        (function() {
+  $(document).ready(function() {
+    return $('#contact-form').submit(function(e) {
+      var email, message, name;
+      name = document.getElementById('inputName');
+      email = document.getElementById('inputEmail');
+      message = document.getElementById('inputMessage');
+      if (!name.value || !email.value || !message.value) {
+        alertify.error('Please check your entries');
+        return false;
+      } else {
+        $.ajax({
+          method: 'POST',
+          url: '//formspree.io/juandg161@gmail.com',
+          data: $('#contact-form').serialize(),
+          datatype: 'json'
+        });
+        e.preventDefault();
+        $(this).get(0).reset();
+        return alertify.success('Message sent');
+      }
+    });
+  });
+
+}).call(this);
+    </script>
 </body>
 
 

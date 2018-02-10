@@ -337,3 +337,14 @@ background-size: cover;
             right: auto;
         }
 }
+
+.display-none {
+  display: none;
+}
+.fill {
+  display: block;
+  width: 100%;
+}
+textarea {
+  resize: vertical;
+}
