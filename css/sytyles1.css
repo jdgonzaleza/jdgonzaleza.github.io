@@ -37,7 +37,6 @@ nav {
 }
 
 h1, 
-h3,
 h4,
 h5,
 h6 {
@@ -64,6 +63,10 @@ h6 {
     height: 150px;
     width: 150px;
     padding-left: 40px;
+}
+
+.nom-pro{
+    text-align: center;
 }
 
 .exp-item .image-link .caption .caption-content {
@@ -97,9 +100,46 @@ h6 {
 
 h3 {
     font-size: 25px;
+    font-family: Montserrat;
+    
 }
 
-masthead {
+.tit-col, .tit-moo{
+    text-align: center;
+    padding-right: 25px;
+   
+}
+
+
+.ab-me-p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0 0 10px;
+    padding-top: 100px;
+    
+}
+.ab-me-p2{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0 0 10px;
+    
+    
+}
+
+.la-img:hover{
+   
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+    max-width: 150px;
+    max-height: 150px;
+    vertical-align: middle;
+     transform: rotate(180deg);
+}
+
+
+.masthead {
     margin: auto 0;
     background-color: aquamarine;
     margin-top: 0;
@@ -347,4 +387,29 @@ background-size: cover;
 }
 textarea {
   resize: vertical;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
