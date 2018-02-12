@@ -413,3 +413,8 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+.footer{
+    text-align: center;
+    background-color: azure;
+    padding-top: 20px;
+}

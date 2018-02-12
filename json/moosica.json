@@ -1,8 +1,8 @@
 {
     "title": "Moosica",
-    "description": "IoT application aimed at preventing health issues in mines by monitoring different variables and activating control systems as necessary.",
-    "technologies":"Python, Django, Node Red, Kafka, ZooKeeper, Cassandra, HTML+CSS, Arduino",
-    "img": "img/img3.png",
+    "description": "Carried out the software development life cycle to implement a fully functional RESTful web application that handles the operations of a home rentals company.",
+    "technologies":"JavaScript, Java, EJBs, Angular, JQuery, HTML, CSS, JaxRS, Maven, Jenkins",
+    "img": "img/moosica.svg",
     "position": "Software Development ",
     "dates": "August 2018 - December 2018"
   }

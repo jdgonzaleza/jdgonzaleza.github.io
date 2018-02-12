@@ -1,7 +1,7 @@
 {
     "title": "Festiv Andes",
-    "description": "IoT application aimed at preventing health issues in mines by monitoring different variables and activating control systems as necessary.",
-    "technologies":"Python, Django, Node Red, Kafka, ZooKeeper, Cassandra, HTML+CSS, Arduino",
+    "description": "Implemented the back-end of a transactional application that can handle the persistence and distributed access to large amounts of data from an events company.",
+    "technologies":"Oracle SQL, Java, WildFly, RabbitMQ, JMS",
     "img": "img/img2.png",
     "position": "Software Development ",
     "dates": "August 2018 - December 2018"
