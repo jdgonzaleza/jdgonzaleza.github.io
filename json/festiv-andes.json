@@ -2,7 +2,7 @@
     "title": "Festiv Andes",
     "description": "Implemented the back-end of a transactional application that can handle the persistence and distributed access to large amounts of data from an events company.",
     "technologies":"Oracle SQL, Java, WildFly, RabbitMQ, JMS",
-    "img": "img/img2.png",
+    "img": "img/festivandes.svg",
     "position": "Software Development ",
     "dates": "January 2017 - June 2017"
   }
