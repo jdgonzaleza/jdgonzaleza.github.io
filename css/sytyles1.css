@@ -250,6 +250,14 @@ h3 {
 .timeline > li:after {
     clear: both;
 }
+.carousel-inner,
+.carousel-item{
+    min-height: 30px;
+}
+
+.d-block{
+    max-height: 300px;
+}
 
 .timeline > li > .timeline-panel {
     width: 46%;
@@ -436,4 +444,12 @@ input[type=submit]:hover {
     text-align: center;
     background-color: azure;
     padding-top: 20px;
+}
+
+.btn{
+    background-color: #121f1f;
+}
+.btn[type=submit]:hover{
+    
+       background-color: #172727;
 }
