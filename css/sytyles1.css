@@ -256,7 +256,7 @@ h3 {
 }
 
 .d-block{
-    max-height: 300px;
+    height: 300px;
 }
 
 .timeline > li > .timeline-panel {
