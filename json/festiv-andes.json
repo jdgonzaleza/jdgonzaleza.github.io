@@ -4,5 +4,6 @@
     "technologies":"Oracle SQL, Java, WildFly, RabbitMQ, JMS",
     "img": "img/festivandes.svg",
     "position": "Software Development ",
-    "dates": "January 2017 - June 2017"
+    "dates": "January 2017 - June 2017",
+    "link": "https://github.com/cpenalozag/FestivAndes"
   }
